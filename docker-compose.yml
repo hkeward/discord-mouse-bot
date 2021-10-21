@@ -1,12 +1,12 @@
 version: '3.8'
 services:
-    discord-poll-bot:
+    discord-mouse-bot:
         image: discord-mouse-bot:latest
         restart: unless-stopped
         entrypoint: ["mousebot.py"]
         network_mode: host
         environment:
-            - DISCORD_MOUSE_BOT_TOKEN=${DISCORD_POLL_BOT_TOKEN}
+            - DISCORD_MOUSE_BOT_TOKEN=${DISCORD_MOUSE_BOT_TOKEN}
             - MOUSEBOT_COUNT_STORAGE_FILE=/data/mousebot_channel_counts.json
         volumes:
             - /srv/discord/mousebot:/data

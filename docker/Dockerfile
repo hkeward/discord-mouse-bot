@@ -12,4 +12,4 @@ RUN python3 -m pip install --upgrade pip && \
 
 COPY ./target/src /opt/discord-mouse-bot
 
-RUN ln -s /opt/discord-poll-bot/mousebot.py /usr/local/bin/
+RUN ln -s /opt/discord-mouse-bot/mousebot.py /usr/local/bin/
